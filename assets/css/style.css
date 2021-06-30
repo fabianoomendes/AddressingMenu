@@ -1,19 +1,39 @@
 @charset "utf-8";
 
+/* Modificações gerais */
+
 *{
     padding: 0px;
     margin: 0px;
+    font-family: "Comic Sans MS",Arial, Helvetica, sans-serif;
 }
+
+/* corpo */
 
 body{
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
+    background-color: #446280;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: 
+        "main"
+        "footer"
+    ;
+}
+
+/* principal */
+
+main{
+    grid-area: main;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #446280;
 }
+
+/* container centro */
 
 .container{
     display: flex;
@@ -72,6 +92,14 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
 }
 
 /* Logos */
