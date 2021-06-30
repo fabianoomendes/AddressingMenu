@@ -38,6 +38,7 @@ body{
     border: none;
     border-radius: 24px;
     padding: 5px 0;
+    background-color: #ddd;
     display: grid;
     grid-template-columns: 1fr 80px;
     grid-template-rows: 1fr;
