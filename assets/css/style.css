@@ -74,6 +74,8 @@ body{
     /* border: 2px solid green; */
 }
 
+/* Logos */
+
 #imgGitHub {
     background-image: url("../img/LogoGitHub.png");
 }
@@ -88,4 +90,12 @@ body{
 
 #imgTwitter {
     background-image: url("../img/LogoTwitter.png");
+}
+
+/* Responsividade */
+
+@media(max-width: 600px){
+    .container{
+        width: 95%;
+    } 
 }
